@@ -1,3 +1,4 @@
+from typing import List
 from abc import ABC, abstractmethod
 
 
@@ -7,5 +8,5 @@ class AbstractFitness(ABC):
         pass
 
     @abstractmethod
-    def evaluate(self, individual, iterations = 1000, display_logging = False):
+    def evaluate(self, individual: List[any], iterations: int = 1000, display_logging: bool = False) -> float:
         pass
